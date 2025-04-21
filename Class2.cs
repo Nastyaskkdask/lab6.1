@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class BoxS : Box
 {
@@ -8,8 +8,16 @@ public class BoxS : Box
     {
     }
 
-    public int GetSBottom() => 2 * (Len + Wid);
-    public int GetMax() => Math.Max(Len * Hei, Wid * Hei);
+    public int GetSBottom()
+    {
+        return 2 * (Len + Wid);
+    }
+
+    public int GetMax()
+    {
+        return Math.Max(Len * Hei, Wid * Hei);
+    }
+
     public bool IsKorob()
     {
         return (Len == Wid) && (Len == Hei) && (Wid == Hei);
